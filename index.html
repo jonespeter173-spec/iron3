@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d47a1">
+<title>IronCoach</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header id="top"><div><h1 id="hdrTitle">IronCoach</h1><small id="hdrSub"></small></div><span id="readyBadge"></span></header>
+<main id="view"></main>
+<nav id="tabs">
+  <button data-tab="today" class="on">🏠<span>Today</span></button>
+  <button data-tab="plan">📅<span>Plan</span></button>
+  <button data-tab="races">🏁<span>Races</span></button>
+  <button data-tab="fitness">📈<span>Fitness</span></button>
+  <button data-tab="coach">🤖<span>Coach</span></button>
+  <button data-tab="settings">⚙️<span>Settings</span></button>
+</nav>
+<div id="sheet" class="hidden"><div class="sheet-body" id="sheetBody"></div></div>
+<div id="toast" class="hidden"></div>
+<script src="engine.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
